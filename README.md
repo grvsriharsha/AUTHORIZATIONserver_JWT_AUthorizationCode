@@ -33,3 +33,14 @@ This code is now collected and Resourceserver/Client hit authorization server wi
 Client recives the token and client extracts the user details and finally fetches the request,if his role permits.
 The rolechecking happens in ResourceWebConfig only,but Authorizaton happens in AuthorizationServer.
 
+
+HTTP REQUEST FOR TOKEN AFTER GETTING THE AUTH_CODE:
+
+curl --location --request POST 'http://localhost:9092/oauth/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic Y291cG9uY2xpZW50YXBwOjk5OTk=' \
+--header 'Cookie: JSESSIONID=CC2B758F85008DA9A5E3DE9807AC463F' \
+--data-urlencode 'grant_type=authorization_code' \
+--data-urlencode 'scope=read' \
+--data-urlencode 'code=X8bdGA'
+
