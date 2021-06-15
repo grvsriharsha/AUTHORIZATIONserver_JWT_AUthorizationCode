@@ -13,7 +13,6 @@ Resource server/Client is  running on 9091
 
 and autherzationserver running on 9092
 
-The code is available at
 
  The Resourceserver/Client redirects the user to a url so he can enter Authorizationserver(like FB login details) login details.This is browser get call.
 
@@ -22,7 +21,7 @@ http://localhost:9092/oauth/authorize?response_type=code&client_id={clientId}&sc
 Here clientid is 'couponclientapp'(not be confused with resourceId which links Authserver and ResourceServer)
 
 Now the Authorization server sends its auth code to a redirect url that  Resourceserver/Client hosts.Lets say 
- Resourceserver/Client configured 'http://localhost:9091/codeHandlerPage'
+ Resourceserver/Client configured 'http://localhost:9091/codeHandlerPage'(RUNS THIS ON BROWSER TO GET THE CODE)
 
 The authcode is avaibale at this redirectUrl,that resourceserver/Client collects it.
 
