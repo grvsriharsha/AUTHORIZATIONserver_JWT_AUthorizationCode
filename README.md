@@ -1,4 +1,4 @@
-# AUTHORIZATIONserver_JWT_AUthorizationCode
+# AuthorizationServer_JWT_AUTHORIZATIONCODE
 
 This is stand alone AuthorizationServer.It does require Db Repo and userdetailservice.
 It uses the private key and creates token and the creates signature.
